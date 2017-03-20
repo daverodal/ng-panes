@@ -1,0 +1,10 @@
+<p>
+  Base Australia
+</p>
+<ngp-unit *ngFor="let unit of baseUnits; let idx = index;" (click)="unitClicked(idx)" [unit]="unit"></ngp-unit>
+<div class="clear"></div>
+<button (click)="startConnection()">Start Xfer</button>
+<ngp-pane [taskForce]="'TF-1'" [(conReq)]="conReq"></ngp-pane>
+<ngp-pane [taskForce]="'TF-2'" [(conReq)]="conReq"></ngp-pane>
+<ngp-pane [taskForce]="'TF-3'" [(conReq)]="conReq"></ngp-pane>
+<ngp-pane [taskForce]="'TF-4'" [(conReq)]="conReq"></ngp-pane>

@@ -1,0 +1,13 @@
+<div style="border:1px solid firebrick">
+{{conReq}}
+  <button (click)="acceptConnection()">Accept</button>
+
+  Connection {{ connection }}
+<p>{{taskForce}}</p>
+<ngp-unit *ngFor="let unit of units" [unit]="unit"></ngp-unit>
+  <div class="clear"></div>
+<hr>
+<span *ngFor="let unit of myUnits; let index = index;" (click)="shipUnit(index)"><ngp-unit [unit]="unit"></ngp-unit> </span>
+  <div class="clear"></div>
+<button (click)="keepUnit()">keep this</button>
+</div>

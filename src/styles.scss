@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+ngp-unit{
+  border:3px solid ;
+  border-color: #ccc #333 #333 #ccc;
+  display:block;
+  float:left;
+  margin:0 10px;
+  width:32px;
+  height:32px;
+  position:relative;
+  background-color:#4A5664;
+  color:#F8E299;
+  .corner{
+    position:absolute;
+    font-size:10px;
+  }
+  .mid{
+    font-size:10px;
+    @extend .corner;
+    top:10px;
+    left:6px;
+  }
+  .ul{
+    @extend .corner;
+    top:0px;
+    left:0px;
+  }
+  .ur{
+    @extend .corner;
+    top:0px;
+    right:0px;
+  }
+  .ll{
+    @extend .corner;
+    bottom:0px;
+    left:0px;
+  }
+  .lr{
+    @extend .corner;
+    bottom:0px;
+    right:0px;
+  }
+}
+.clear{
+  clear:both;
+}
