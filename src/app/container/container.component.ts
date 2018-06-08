@@ -35,8 +35,9 @@ export class ContainerComponent  implements Xfer  {
   }
 
   unitClicked(index){
-    // this.xferUnits.push(this.baseUnits[index]);
-    // this.baseUnits.splice(index,1);
+    debugger;
+    this.connection.xfer(this.baseUnits[index]);
+    this.baseUnits.splice(index,1);
   }
   iGotClicked(){
   }
